@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  redis:
+    image: "redis:alpine"
+
+  bot:
+    build: .
+    environment:
+      BOT_TOKEN: ""
+      BOT_CHANNEL_ID: ""
+      REDIS_ADDRESS: "redis:6379"
+      REDIS_PASSWORD: ""
+    depends_on:
+      - redis
