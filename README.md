@@ -14,7 +14,9 @@ To store temporary data (not-sended tasks), it needs key-value stoage. With [gok
 
 ## To do
 
-* Localization files for messages.
+* Localization files for messages;
+* Container healthcheck;
+* Prometheus endpoint.
 
 ## License
 
